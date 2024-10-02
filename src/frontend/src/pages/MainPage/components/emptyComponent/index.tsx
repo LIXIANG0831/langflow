@@ -15,15 +15,16 @@ const EmptyComponent = ({ handleOpenModal }: EmptyComponentProps) => {
       <div className="flex-max-width h-full flex-col">
         <div className="align-center flex w-full justify-center gap-1">
           <span className="text-muted-foreground">
-            This folder is empty. New?
-          </span>
+            当前工作夹为空。
+        </span>
+          <br/>
           <span className="transition-colors hover:text-muted-foreground">
             <button
-              onClick={handleOpenModal}
-              disabled={isLoadingFolders}
-              className="underline"
+                onClick={handleOpenModal}
+                disabled={isLoadingFolders}
+                className="underline"
             >
-              Start Here
+              点击新建
             </button>
           </span>
           <span className="animate-pulse">🚀</span>

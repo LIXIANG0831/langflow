@@ -29,7 +29,7 @@ export const WRONG_FILE_ERROR_ALERT = "Invalid file type";
 export const UPLOAD_ALERT_LIST = "Please upload a JSON file";
 export const INVALID_SELECTION_ERROR_ALERT = "Invalid selection";
 export const EDIT_PASSWORD_ERROR_ALERT = "Error changing password";
-export const EDIT_PASSWORD_ALERT_LIST = "Passwords do not match";
+export const EDIT_PASSWORD_ALERT_LIST = "密码不匹配";
 export const SAVE_ERROR_ALERT = "Error saving changes";
 export const PROFILE_PICTURES_GET_ERROR_ALERT =
   "Error retrieving profile pictures";

@@ -36,9 +36,9 @@ const PasswordFormComponent = ({
       >
         <Card x-chunk="dashboard-04-chunk-2">
           <CardHeader>
-            <CardTitle>Password</CardTitle>
+            <CardTitle>密码</CardTitle>
             <CardDescription>
-              Type your new password and confirm it.
+              输入新密码并确认。
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -56,7 +56,7 @@ const PasswordFormComponent = ({
                   className="w-full"
                 />
                 <Form.Message match="valueMissing" className="field-invalid">
-                  Please enter your password
+                  请输入您的密码
                 </Form.Message>
               </Form.Field>
               <Form.Field name="cnfPassword" className="w-full">
@@ -75,14 +75,14 @@ const PasswordFormComponent = ({
                 />
 
                 <Form.Message className="field-invalid" match="valueMissing">
-                  Please confirm your password
+                  请确认您的密码
                 </Form.Message>
               </Form.Field>
             </div>
           </CardContent>
           <CardFooter className="border-t px-6 py-4">
             <Form.Submit asChild>
-              <Button type="submit">Save</Button>
+              <Button type="submit">保存</Button>
             </Form.Submit>
           </CardFooter>
         </Card>

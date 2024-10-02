@@ -22,7 +22,8 @@ export default function LoadingComponent({
         />
       </svg>
       <br></br>
-      <span className="animate-pulse text-lg text-primary">Loading...</span>
+      <span className="animate-pulse text-lg text-primary font-bold">AwsomeAgent</span>
+      <span className="animate-pulse text-lg text-primary">加载中...</span>
     </div>
   );
 }

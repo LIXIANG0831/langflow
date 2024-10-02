@@ -294,7 +294,7 @@ export default function AdminPage() {
                 }}
                 asChild
               >
-                <Button variant="primary">New User</Button>
+                <Button variant="primary">创建用户</Button>
               </UserManagementModal>
             </div>
           </div>
@@ -323,12 +323,12 @@ export default function AdminPage() {
                     }
                   >
                     <TableRow>
-                      <TableHead className="h-10">Id</TableHead>
-                      <TableHead className="h-10">Username</TableHead>
-                      <TableHead className="h-10">Active</TableHead>
-                      <TableHead className="h-10">Superuser</TableHead>
-                      <TableHead className="h-10">Created At</TableHead>
-                      <TableHead className="h-10">Updated At</TableHead>
+                      <TableHead className="h-10">用户ID</TableHead>
+                      <TableHead className="h-10">用户名</TableHead>
+                      <TableHead className="h-10">激活</TableHead>
+                      <TableHead className="h-10">管理员</TableHead>
+                      <TableHead className="h-10">创建时间</TableHead>
+                      <TableHead className="h-10">更新时间</TableHead>
                       <TableHead className="h-10 w-[100px] text-right"></TableHead>
                     </TableRow>
                   </TableHeader>

@@ -78,10 +78,13 @@ export default function Header(): JSX.Element {
     <div className="header-arrangement relative">
       <div className="header-start-display">
         <CustomLink to="/all" className="cursor-pointer">
-          <span className="ml-4 text-2xl">⛓️</span>
+          <span className="ml-4 text-xl" style={{ fontFamily: 'monospace' }}>
+            AwsomeAgent
+          </span>
+          <span className="ml-4 text-2xl">😲🤖</span>
         </CustomLink>
         {showArrowReturnIcon && (
-          <Button
+            <Button
             unstyled
             onClick={() => {
               redirectToLastLocation();
@@ -122,7 +125,7 @@ export default function Header(): JSX.Element {
               data-testid="button-store"
             >
               <IconComponent name="Store" className="h-4 w-4" />
-              <div className="hidden flex-1 lg:block">Store</div>
+              <div className="hidden flex-1 lg:block">市场</div>
             </Button>
           </CustomLink>
         )}
@@ -181,18 +184,19 @@ export default function Header(): JSX.Element {
               )}
             </button>
           )}
-          <AlertDropdown>
-            <div className="extra-side-bar-save-disable relative">
-              {notificationCenter && (
-                <div className="header-notifications"></div>
-              )}
-              <IconComponent
-                name="Bell"
-                className="side-bar-button-size"
-                aria-hidden="true"
-              />
-            </div>
-          </AlertDropdown>
+          {/*禁用通知*/}
+          {/*<AlertDropdown>*/}
+          {/*  <div className="extra-side-bar-save-disable relative">*/}
+          {/*    {notificationCenter && (*/}
+          {/*      <div className="header-notifications"></div>*/}
+          {/*    )}*/}
+          {/*    <IconComponent*/}
+          {/*      name="Bell"*/}
+          {/*      className="side-bar-button-size"*/}
+          {/*      aria-hidden="true"*/}
+          {/*    />*/}
+          {/*  </div>*/}
+          {/*</AlertDropdown>*/}
 
           <>
             <Separator orientation="vertical" />
@@ -232,13 +236,13 @@ export default function Header(): JSX.Element {
                     <DropdownMenuSeparator />
                   </>
                 )}
-                <DropdownMenuLabel>General</DropdownMenuLabel>
+                <DropdownMenuLabel>通用</DropdownMenuLabel>
                 <DropdownMenuItem
                   className="cursor-pointer gap-2"
                   onClick={() => navigate("/settings")}
                 >
                   <ForwardedIconComponent name="Settings" className="w-4" />
-                  Settings
+                  设置
                 </DropdownMenuItem>
                 {!autoLogin && (
                   <>
@@ -248,40 +252,40 @@ export default function Header(): JSX.Element {
                         onClick={() => navigate("/admin")}
                       >
                         <ForwardedIconComponent name="Shield" className="w-4" />
-                        Admin Page
+                        管理页
                       </DropdownMenuItem>
                     )}
                   </>
                 )}
                 <DropdownMenuSeparator />
-                <DropdownMenuLabel>Help</DropdownMenuLabel>
-                <DropdownMenuItem
-                  className="cursor-pointer gap-2"
-                  onClick={() =>
-                    window.open(
-                      DOCS_LINK || "https://docs.langflow.org/",
-                      "_blank",
-                    )
-                  }
-                >
-                  <ForwardedIconComponent name="FileText" className="w-4" />
-                  Docs
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="cursor-pointer gap-2"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/langflow-ai/langflow/discussions",
-                      "_blank",
-                    )
-                  }
-                >
-                  <ForwardedIconComponent
-                    name="MessagesSquare"
-                    className="w-4"
-                  />
-                  Discussions
-                </DropdownMenuItem>
+                {/*<DropdownMenuLabel>Help</DropdownMenuLabel>*/}
+                {/*<DropdownMenuItem*/}
+                {/*  className="cursor-pointer gap-2"*/}
+                {/*  onClick={() =>*/}
+                {/*    window.open(*/}
+                {/*      DOCS_LINK || "https://docs.langflow.org/",*/}
+                {/*      "_blank",*/}
+                {/*    )*/}
+                {/*  }*/}
+                {/*>*/}
+                {/*  <ForwardedIconComponent name="FileText" className="w-4" />*/}
+                {/*  Docs*/}
+                {/*</DropdownMenuItem>*/}
+                {/*<DropdownMenuItem*/}
+                {/*  className="cursor-pointer gap-2"*/}
+                {/*  onClick={() =>*/}
+                {/*    window.open(*/}
+                {/*      "https://github.com/langflow-ai/langflow/discussions",*/}
+                {/*      "_blank",*/}
+                {/*    )*/}
+                {/*  }*/}
+                {/*>*/}
+                {/*  <ForwardedIconComponent*/}
+                {/*    name="MessagesSquare"*/}
+                {/*    className="w-4"*/}
+                {/*  />*/}
+                {/*  Discussions*/}
+                {/*</DropdownMenuItem>*/}
                 {!autoLogin && (
                   <>
                     <DropdownMenuSeparator />
@@ -290,7 +294,7 @@ export default function Header(): JSX.Element {
                       onClick={handleLogout}
                     >
                       <ForwardedIconComponent name="LogOut" className="w-4" />
-                      Log Out
+                      登出
                     </DropdownMenuItem>
                   </>
                 )}

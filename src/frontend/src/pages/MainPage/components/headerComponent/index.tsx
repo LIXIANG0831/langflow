@@ -43,7 +43,7 @@ const HeaderComponent = ({
             <div className="flex items-center space-x-2">
               <Checkbox checked={!shouldSelectAll} id="terms" />
               <span className="label text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                {shouldSelectAll ? "Select All" : "Unselect All"}
+                {shouldSelectAll ? "全选" : "取消全选"}
               </span>
             </div>
           </a>

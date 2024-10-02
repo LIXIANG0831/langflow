@@ -98,7 +98,7 @@ export const limitScrollFieldsModal = 10;
  * The base text for subtitle of Export Dialog (Toolbar)
  * @constant
  */
-export const EXPORT_DIALOG_SUBTITLE = "Export flow as JSON file.";
+export const EXPORT_DIALOG_SUBTITLE = "导出 flow 为 JSON 文件.";
 /**
  * The base text for subtitle of Flow Settings (Menubar)
  * @constant
@@ -549,25 +549,28 @@ export const NOUNS: string[] = [
  * @constant
  *
  */
-export const USER_PROJECTS_HEADER = "My Collection";
+// export const USER_PROJECTS_HEADER = "My Collection";
+export const USER_PROJECTS_HEADER = "工作空间";
 
-export const DEFAULT_FOLDER = "My Projects";
+// export const DEFAULT_FOLDER = "My Projects";
+export const DEFAULT_FOLDER = "我的项目";
 
 /**
  * Header text for admin page
  * @constant
  *
  */
-export const ADMIN_HEADER_TITLE = "Admin Page";
+export const ADMIN_HEADER_TITLE = "管理页";
 
 /**
  * Header description for admin page
  * @constant
  *
  */
+// export const ADMIN_HEADER_DESCRIPTION =
+//   "Navigate through this section to efficiently oversee all application users. From here, you can seamlessly manage user accounts.";
 export const ADMIN_HEADER_DESCRIPTION =
-  "Navigate through this section to efficiently oversee all application users. From here, you can seamlessly manage user accounts.";
-
+  "浏览该页以监督所有应用程序用户。从这里，您可以无缝地管理用户帐户。";
 export const BASE_URL_API = custom.BASE_URL_API || "/api/v1/";
 
 /**
@@ -676,12 +679,12 @@ export const OUTPUT_TYPES = new Set([
 ]);
 
 export const CHAT_FIRST_INITIAL_TEXT =
-  "Start a conversation and click the agent's memories";
+  "开始对话";
 
 export const TOOLTIP_OUTDATED_NODE =
   "Your component is outdated. Click to update (data may be lost)";
 
-export const CHAT_SECOND_INITIAL_TEXT = "to inspect previous messages.";
+export const CHAT_SECOND_INITIAL_TEXT = "单击Agent的Memories以检查历史消息。";
 
 export const ZERO_NOTIFICATIONS = "No new notifications";
 
@@ -697,15 +700,15 @@ export const INPUT_HANDLER_HOVER = "Avaliable input components:";
 export const OUTPUT_HANDLER_HOVER = "Avaliable output components:";
 export const TEXT_INPUT_MODAL_TITLE = "Inputs";
 export const OUTPUTS_MODAL_TITLE = "Outputs";
-export const LANGFLOW_CHAT_TITLE = "Langflow Chat";
+export const LANGFLOW_CHAT_TITLE = "AwsomeAgent";
 export const CHAT_INPUT_PLACEHOLDER =
   "No chat input variables found. Click to run your flow.";
 export const CHAT_INPUT_PLACEHOLDER_SEND = "Send a message...";
 export const EDIT_CODE_TITLE = "Edit Code";
 export const MY_COLLECTION_DESC =
-  "Manage your projects. Download and upload entire collections.";
-export const STORE_DESC = "Explore community-shared flows and components.";
-export const STORE_TITLE = "Langflow Store";
+  "管理您的项目，下载和上传整个工作空间。";
+export const STORE_DESC = "发现社区共享的工作流和组件。";
+export const STORE_TITLE = "智能体商店";
 export const NO_API_KEY = "You don't have an API key.";
 export const INSERT_API_KEY = "Insert your Langflow API key.";
 export const INVALID_API_KEY = "Your API key is not valid. ";

@@ -73,7 +73,7 @@ export default function LoginAdminPage() {
           variant="default"
           className="w-full"
         >
-          Login
+          登录
         </Button>
       </div>
     </div>

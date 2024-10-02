@@ -34,7 +34,8 @@ const HeaderTabsSearchComponent = ({
           }}
         />
         <TabsSearchComponent
-          tabsOptions={["All", "Flows", "Components"]}
+          // tabsOptions={["All", "Flows", "Components"]}
+          tabsOptions={["全部", "工作流", "组件"]}
           setActiveTab={setTabActive}
           loading={loading}
           tabActive={tabActive}

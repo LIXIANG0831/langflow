@@ -42,13 +42,16 @@ const StoreApiKeyFormComponent = ({
       >
         <Card x-chunk="dashboard-04-chunk-2" id="api">
           <CardHeader>
-            <CardTitle>Store API Key</CardTitle>
+            <CardTitle>保存 API Key</CardTitle>
             <CardDescription>
-              {(hasApiKey && !validApiKey
-                ? INVALID_API_KEY
-                : !hasApiKey
-                  ? NO_API_KEY
-                  : "") + INSERT_API_KEY}
+              {/*{(hasApiKey && !validApiKey*/}
+              {/*  ? INVALID_API_KEY*/}
+              {/*  : !hasApiKey*/}
+              {/*    ? NO_API_KEY*/}
+              {/*    : "") + INSERT_API_KEY}*/}
+              {
+                "如果您没有API Key，请先创建。"
+              }
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -63,23 +66,23 @@ const StoreApiKeyFormComponent = ({
                     value={apikey}
                     isForm
                     password={true}
-                    placeholder="Insert your API Key"
+                    placeholder="输入您的 API Key"
                     className="w-full"
                   />
                   <Form.Message match="valueMissing" className="field-invalid">
-                    Please enter your API Key
+                    请输入你的API KEY
                   </Form.Message>
                 </Form.Field>
               </div>
               <span className="pr-1 text-xs text-muted-foreground">
-                {CREATE_API_KEY}{" "}
-                <a
-                  className="text-high-indigo underline"
-                  href="https://langflow.store/"
-                  target="_blank"
-                >
-                  langflow.store
-                </a>
+                {/*{CREATE_API_KEY}{" "}*/}
+                {/*<a*/}
+                {/*  className="text-high-indigo underline"*/}
+                {/*  href="https://langflow.store/"*/}
+                {/*  target="_blank"*/}
+                {/*>*/}
+                {/*  langflow.store*/}
+                {/*</a>*/}
               </span>
             </div>
           </CardContent>
@@ -90,7 +93,7 @@ const StoreApiKeyFormComponent = ({
                 type="submit"
                 data-testid="api-key-save-button-store"
               >
-                Save
+                保存
               </Button>
             </Form.Submit>
           </CardFooter>

@@ -78,7 +78,7 @@ export default function HomePage(): JSX.Element {
         button={
           <div className="flex gap-2">
             <DropdownButton
-              firstButtonName="New Project"
+              firstButtonName="创建项目"
               onFirstBtnClick={() => {
                 setOpenModal(true);
                 track("New Project Button Clicked");

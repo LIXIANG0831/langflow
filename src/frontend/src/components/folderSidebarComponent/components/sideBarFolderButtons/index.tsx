@@ -147,7 +147,7 @@ const SideBarFoldersButtonsComponent = ({
   function addNewFolder() {
     mutateAddFolder({
       data: {
-        name: "New Folder",
+        name: "新工作夹",
         parent_id: null,
         description: "",
       },
@@ -234,7 +234,7 @@ const SideBarFoldersButtonsComponent = ({
 
   const HeaderButtons = () => (
     <div className="flex shrink-0 items-center justify-between gap-2">
-      <div className="flex-1 self-start text-lg font-semibold">Folders</div>
+      <div className="flex-1 self-start text-lg font-semibold">工作夹</div>
       <AddFolderButton onClick={addNewFolder} disabled={isUpdatingFolder} />
       <UploadFolderButton
         onClick={handleUploadFlowsToFolder}

@@ -206,7 +206,7 @@ export default function StorePage(): JSX.Element {
                   (loading ? " cursor-not-allowed" : "")
                 }
               >
-                All
+                全部
               </button>
               <button
                 data-testid="flows-button-store"
@@ -222,7 +222,7 @@ export default function StorePage(): JSX.Element {
                   (loading ? " cursor-not-allowed" : "")
                 }
               >
-                Flows
+                工作流
               </button>
               <button
                 data-testid="components-button-store"
@@ -238,13 +238,13 @@ export default function StorePage(): JSX.Element {
                   (loading ? " cursor-not-allowed" : "")
                 }
               >
-                Components
+                组件
               </button>
-              <ShadTooltip content="Coming Soon">
-                <button className="cursor-not-allowed p-3 text-muted-foreground">
-                  Bundles
-                </button>
-              </ShadTooltip>
+              {/*<ShadTooltip content="Coming Soon">*/}
+              {/*  <button className="cursor-not-allowed p-3 text-muted-foreground">*/}
+              {/*    Bundles*/}
+              {/*  </button>*/}
+              {/*</ShadTooltip>*/}
             </div>
           </div>
 

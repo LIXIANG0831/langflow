@@ -96,7 +96,7 @@ export default function ProfileSettingsPage(): JSX.Element {
         <div className="community-page-nav-arrangement">
           <span className="community-page-nav-title">
             <IconComponent name="User" className="w-6" />
-            Profile Settings
+            头像设置
           </span>
         </div>
         <span className="community-page-description-text">
@@ -185,7 +185,7 @@ export default function ProfileSettingsPage(): JSX.Element {
             <div className="w-32">
               <Form.Submit asChild>
                 <Button className="mr-3 mt-6 w-full" type="submit">
-                  Save
+                  保存
                 </Button>
               </Form.Submit>
             </div>
